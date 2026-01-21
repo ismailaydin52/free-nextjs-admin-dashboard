@@ -1,0 +1,29 @@
+{
+  "build": {
+    "appId": "com.akguelektrik.app",
+    "productName": "Akgül Elektrik",
+    "files": [
+      "dist",
+      "node_modules",
+      "electron-main.js",
+      "preload.js",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "certificateFile": null
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
